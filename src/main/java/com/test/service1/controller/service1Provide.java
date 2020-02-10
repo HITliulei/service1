@@ -28,13 +28,13 @@ public class service1Provide {
         return this.version;
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/users/{id}")
     public User findOne(@PathVariable("id")Long id){
         return this.userRepository.getOne(id);
     }
 
 
-    @PutMapping("/puttest")
+    @PutMapping("/puttests")
     public String puttest(@RequestBody User user){
         System.out.println("      " + user.toString());
         return "success put test";

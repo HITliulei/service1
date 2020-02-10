@@ -27,6 +27,7 @@ public class service1Provide {
     public String getVersion(){
         return this.version;
     }
+
     @GetMapping("/user/{id}")
     public User findOne(@PathVariable("id")Long id){
         return this.userRepository.getOne(id);

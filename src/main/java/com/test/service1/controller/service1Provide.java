@@ -20,7 +20,6 @@ public class service1Provide {
 
     @Value("${eureka.instance.metadata-map.version}")
     private String version;
-
     @Autowired
     private UserRepository userRepository;
 

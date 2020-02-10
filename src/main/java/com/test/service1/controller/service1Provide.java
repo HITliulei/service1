@@ -44,4 +44,9 @@ public class service1Provide {
         return this.userRepository.findAll();
     }
 
+
+    @GetMapping("/only")
+    public String get(){
+        return "no other service use";
+    }
 }
